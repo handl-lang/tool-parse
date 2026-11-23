@@ -2,7 +2,7 @@
 
 `hnl-tool-parse` — the abstraction crate for the parse operation.
 
-An `engine-*` crate: the trait/type surface for parsing that concrete parser
+A `tool-*` crate: the trait/type surface for parsing that concrete parser
 engines (`tool-parse-pratt`) implement.
 
 ## Development
