@@ -5,4 +5,4 @@ repos it patches.
 
 ## Implement a parser
 
-Implement `ParserEngine` and produce an `Ast` arena. Follow `engine-parse-pratt`'s root-node convention so downstream passes can rely on it.
+Implement `ParserEngine` and produce an `Ast` arena. Follow `tool-parse-pratt`'s root-node convention so downstream passes can rely on it.

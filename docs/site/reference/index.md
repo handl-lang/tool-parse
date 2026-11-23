@@ -13,7 +13,7 @@
 
 | crate | role |
 |---|---|
-| `hnl-engine-parse` | abstraction — contract only |
+| `hnl-tool-parse` | abstraction — contract only |
 
 ## Build and test
 

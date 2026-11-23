@@ -1,10 +1,10 @@
-//! # hnl-engine-parse
+//! # hnl-tool-parse
 //!
 //! The **abstraction** crate for the parse operation (ADR-0044 §3).
 //!
 //! Splits `plugin-ext-parser` into an abstraction (operation marker + trait +
 //! `ParserContext`, no engine) and an engine crate
-//! (`hnl-engine-parse-pratt`). This crate defines the `Parser` operation
+//! (`hnl-tool-parse-pratt`). This crate defines the `Parser` operation
 //! marker, [`ParserRequest`], the [`ParserContext`] API that engines use to
 //! walk tokens, and the [`ParserEngine`] trait. **No Pratt loop lives here** —
 //! that is the engine crate's job.

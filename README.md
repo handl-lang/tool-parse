@@ -1,9 +1,9 @@
-# engine-parse
+# tool-parse
 
-`hnl-engine-parse` — the abstraction crate for the parse operation.
+`hnl-tool-parse` — the abstraction crate for the parse operation.
 
 An `engine-*` crate: the trait/type surface for parsing that concrete parser
-engines (`engine-parse-pratt`) implement.
+engines (`tool-parse-pratt`) implement.
 
 ## Development
 
@@ -21,4 +21,4 @@ MIT.
 
 ## Documentation
 
-<https://handl-lang.github.io/docs/engine-parse/>
+<https://handl-lang.github.io/docs/tool-parse/>
