@@ -1,3 +1,32 @@
+# Agent guide — tool-parse
+
+`hnl-tool-parse` — the abstraction crate for the parse operation: the
+trait/type surface for parsing that concrete parser engines
+(`tool-parse-pratt`) implement. `publish = false` (git-install only).
+Rust 2024.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/lib.rs` | the whole surface — parser traits/types |
+| `docs/` | operation doc |
+| `xtask/`, `workflows/gate.yaml`, `bupha.toml`, `.cargo/` | vendored repo gate + CI wiring |
+
+## Contract
+
+- Deps resolve from git — `handl-language` → `handl-lang/kernel`
+  `branch = "main"`.
+- Abstraction only: no parsing algorithm lives here — engines
+  implement the traits defined in `lib.rs`.
+
+## Verification
+
+```bash
+cargo xtask gate   # fmt --check → clippy -D warnings → test → doc
+```
+
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
